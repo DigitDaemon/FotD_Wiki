@@ -11,3 +11,20 @@ a {
 a:visited {
     color: darkmagenta;
 }
+
+.character-header-grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50%;
+    gap: 15px 20px;
+    grid-template-areas:
+    "CHPicture CHInfo"
+}
+
+.character-header-picture{
+    grid-area: CHPicture;
+    background-color: darkviolet;
+}
+.character-header-info{
+    grid-area: CHInfo;
+}
