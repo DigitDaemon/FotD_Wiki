@@ -28,3 +28,50 @@ a:visited {
 .character-header-info{
     grid-area: CHInfo;
 }
+
+.location-header-grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50%;
+    gap: 15px 20px;
+    grid-template-areas:
+    "LPicture LInfo"
+}
+
+.location-header-picture{
+    grid-area: LPicture;
+    background-color: darkviolet;
+}
+.location-header-info{
+    grid-area: LInfo;
+}
+
+.collapsible{
+    margin: 2% 2% 0 0;
+    background-color: grey;
+    color: rgb(129, 36, 122);
+    cursor: pointer;
+    padding: 18px;
+    width: 40%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: rgb(152, 152, 152);
+  }
+
+.collapsible-content{
+    width: 40%;
+    margin: 2% 2% 0 0;
+    display: none;
+    overflow: hidden;
+    color: black;
+    background-color: rgb(222, 222, 222);
+}
+
+.cheatsheet-skills table, th, td{
+    border: 1px solid grey;
+}
